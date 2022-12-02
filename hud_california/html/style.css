@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+.playerStats {
+	position: absolute;
+	left: 350px; /* Default: 350px */
+	bottom: 10px; /* Default: 10px */
+
+	left: 87.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	top: 5%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+}
+
+.stat {
+	color: rgb(255, 255, 255);
+	background: linear-gradient(to left, rgba(201, 116, 116, 0.582) 0%,rgba(0, 0, 0, 0.459) 0%);
+	width: 225px;
+	height: 34px;
+	position: relative;
+	margin-bottom: 4px;
+}
+
+.stat:after{
+  content:"";
+  display: block;
+  height:1.1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.stat:nth-child(1):after{
+	background: -webkit-linear-gradient(left, rgb(17, 199, 99) 0%, limegreen 50%, rgba(10, 170, 100, 1) 100%);
+}
+  .stat:nth-child(2):after{
+	background: -webkit-linear-gradient(left, rgba(245, 102, 114, 0.726) 0%, red 50%, rgb(182, 39, 51, 0.952) 100%);
+}
+.stat:nth-child(3):after{
+	background: -webkit-linear-gradient(left, rgba(29, 214, 214, 0.952) 10%, powderblue 50%, rgb(39, 182, 182, 0.952) 100%);
+}
+.stat:nth-child(4):after{
+	background: -webkit-linear-gradient(left, rgba(161, 161, 161, 0.952) 10%, white 50%, rgb(161, 161, 161, 0.952) 100%);
+}
+
+.stat .icon {
+	height: 35px;
+	width: 47px;
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0) 10%);
+	border-radius: 100%;
+	position: relative;
+	display: inline-block;
+	right: 10px;
+}
+
+.stat .icon i, .stat .icon img{
+	position: absolute;
+	top: 49%;
+	left: 46%;
+	transform: translate(-50%, -50%);
+}
+
+.stat .icon img {
+	height: 34px;
+	width: 30px;
+}
+
+.stat span {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 10px;
+}
+
+.triangle span {
+	position: absolute;
+	transform: translateY(-90%);
+	margin-left: 10px;
+	color: rgb(255, 255, 255);
+}
+
+.status {
+	display: flex;
+	width: 195px;
+	position: relative;
+	left: -15px;
+	justify-content: space-between;
+}
+
+.vert-stat {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.vert-stat .bg {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.vert-stat img {
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.triangle{
+	width: 68.9%;
+	left: 70px;
+	position: relative;
+	border-top: 16px solid rgba(0, 0, 0, 0.459);
+	border-left: 10px solid transparent;
+}
+
+.stat:nth-child(4){
+	margin-bottom: 0px !important;
+	}
+
+#job2 span {
+	font-size: 12px !important;
+	margin-top: -2px !important;
+	}
